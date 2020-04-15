@@ -82,6 +82,7 @@ h1, h2, h3, h4 {
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
+<<<<<<< HEAD
 
 .name {
     font-family: "exo" , sans-serif ;
@@ -206,3 +207,5 @@ footer {
 #footer-details {
     padding: 20px;
 }
+=======
+>>>>>>> b465fed480e13879e487575eb1ade2e87ada0678
