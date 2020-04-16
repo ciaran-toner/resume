@@ -37,13 +37,13 @@ h1, h2, h3, h4 {
 }
 
 .general-sub {
-    font-family: "exo" , sans-serif;
+    font-family: "Exo" , sans-serif;
     font-weight: 300;
     color: #fafafa;
 }
 
 .inline-block {
-    display: inline-block’’;
+    display: inline-block;
 }
 
 .row-table {
@@ -57,7 +57,7 @@ h1, h2, h3, h4 {
 }
 
 .section-heading {
-    font-family: "exo" , sans-serif;
+    font-family: "Exo" , sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
@@ -82,10 +82,9 @@ h1, h2, h3, h4 {
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
-<<<<<<< HEAD
 
 .name {
-    font-family: "exo" , sans-serif ;
+    font-family: "Exo" , sans-serif ;
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
@@ -207,5 +206,14 @@ footer {
 #footer-details {
     padding: 20px;
 }
-=======
->>>>>>> b465fed480e13879e487575eb1ade2e87ada0678
+
+/* ----------------------------------------Three Reasons */
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e22;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
