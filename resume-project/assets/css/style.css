@@ -85,7 +85,6 @@ h1, h2, h3, h4 {
 .heading {
     margin-left: 50px;
 }
-
 .logo {
     background: url("../images/rosie.jpg");
     background-position: center;
@@ -96,7 +95,6 @@ h1, h2, h3, h4 {
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
-
 .name {
     font-family: "Exo" , sans-serif ;
     font-weight: 100;
@@ -104,7 +102,6 @@ h1, h2, h3, h4 {
     margin-top: 50px;
     color: #fff;
 }
-
 .title {
     font-family: "Roboto" ,sans-serif;
     font-weight: 200;
@@ -113,15 +110,12 @@ h1, h2, h3, h4 {
     margin-bottom: 90px;
     color: #fff;
 }
-
 .list-inline-item:not(:last-child) {
     margin: 0;
 }
-
 .menucontainer {
     font-size: 0;
 }
-
 #nav li {
     font-size: 14px;
     padding: 0;
@@ -367,3 +361,6 @@ button[type="submit"] {
         max-width: 50%;
     }
 }
+
+/* ----------------------------------------Map Styles */
+div#map {min-height: 360px;}
