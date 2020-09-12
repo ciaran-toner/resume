@@ -1,6 +1,6 @@
 function userInformationHTML(user) {
   return `
-    <h2>{$user.name}
+    <h2>${user.name}
       <span class="small-name">
         (@<a href ="${user.html_url}" target="_blank">${user.login}</a>)
       </span>
@@ -21,17 +21,17 @@ function repoInformationHTML(repos) {
   }
   var listItemsHTML = repos.map(function(repo) {
     return `<li>
-                <a href="${rep.html_url}" target="_blank">${repo.name}</a>
+                <a href="${repo.html_url}" target="_blank">${repo.name}</a>
                 </li>`;
   });
   return `<div class = "clearfix repo-list">
-            <p>
-                <strong>Repo List:</strong>
-            </p>
-            <ul>
-                ${listItemsHTML.jion("\n")}
-            </ul>
-          </div>`;
+              <p>
+                  <strong>Repo List:</strong>
+              </p>
+              <ul>
+                 ${listItemsHTML.join("\n")}
+              </ul>
+           </div>`;
 }
 
 function fetchGitHubInformation(event) {
@@ -47,12 +47,12 @@ function fetchGitHubInformation(event) {
           </div>`);
 
   $.when(
-    $.getJSON(`https://api.github.com/users/${username}`)
+    $.getJSON(`https://api.github.com/users/${username}`),
     $.getJSON(`https://api.github.com/users/${username}/repos`)
   ).then(
     function (firstRepsonse, secondResponse) {
       var userData = firstRepsonse[0];
-      var repoData = secondRepsonse[0];
+      var repoData = secondResponse[0];
       $("#gh-user-data").html(userInformationHTML(userData));
       $("#gh-repo-data").html(repoInformationHTML(repoData));
     },
